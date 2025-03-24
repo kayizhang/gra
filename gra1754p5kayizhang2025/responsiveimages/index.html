@@ -1,0 +1,178 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Images</title>
+<style>
+
+body {
+    padding: 0;
+    margin: 0;
+    background-color: rgba(0,0,0,1.00);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+header {
+    background-repeat: no-repeat;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    background-color: rgba(0,0,0,1.00);
+    background-image: url(images/ee50991b208ad647afdef347764228eb.gif);
+}
+h1  {
+    color: rgba(177,0,2,1.00);
+    font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", sans-serif;
+    text-align: center;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 50px;
+    text-shadow: 2px 2px rgba(255,255,255,1.00);
+}
+ul li {
+    padding-top: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    text-align: justify;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 15px;
+    display: inline-block;
+    color: rgba(255,255,255,1.00);
+    text-decoration: none;
+    background-color: rgba(180,4,18,1.00);
+}
+	
+	wrapper {
+    min-width: 810px;
+    /* [disabled]margin: 0 auto; */
+    max-width: 1350px;
+    display: block;
+}
+	
+#asianfood {
+    margin: 1em;
+    padding: 1em;
+}
+	p {
+    background-color: rgba(0,0,0,1.00);
+    color: rgba(255,255,255,1.00);
+}
+@media screen and (min-width:40em){
+	header{
+    background-repeat: no-repeat;
+    background-position: top center;
+    margin: 10px;
+    padding: 10px;
+    height: 22em;
+	@media (min-width:40em){
+    text-align: center;
+}
+#china {
+}
+.korean   {
+}
+@media screen and (min-width:64em){
+	header{
+    height: 198em;
+    
+	}
+
+
+/*
+==================================================
+Add media queries for tablet and desktop viewports
+==================================================
+
+*/
+
+
+
+
+</style>
+<!--
+===================================================
+Add the Picturefill and Matchmedia JS files to load
+conditional images and add support for <IE8
+===================================================
+-->
+<script src="js/picturefill.js"></script>
+<script src="js/matchmedia.js"></script>
+</head>
+
+<body>
+<wrapper>
+	<header>
+	<h1>Asian Kitchen</h1>
+		<ul>
+<li>Home</li>
+ <li> Menu</li>
+    <li> Restaunrants</li>
+	<li> Contact</li>
+
+
+		 
+  </ul>
+		
+
+  </header>
+	
+
+	</wrapper>
+
+	
+<!--
+==============================================================
+Surround the IMG tag below with the FIGURE tag,
+DIV DATA-PICTURE and the NOSCRIPT tag as a fallback.
+Precede it with the three DIV DATA-SRC tags,
+including MEDIA QUERIES for tablet and desktop viewport sizes. 
+==============================================================
+-->
+<figure id="asian food"> 
+  <div data-picture data-alt="asian food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!">
+      <h1 class="korean">Korean BBQ</h1>
+	  <p>Korean BBQ is one of the best food experiences out there! It’s usually a fun and interactive meal where you grill your own meat at the table. The most popular types of meat are beef (like bulgogi or galbi), pork (samgyeopsal), and chicken. You typically wrap the grilled meat in leafy lettuce with rice, garlic, spicy paste (gochujang), and sometimes a slice of grilled kimchi, then eat it all in one bite. </p>
+        <div data-src="images/COTEsmall.jpg"></div>
+        <div data-src="images/COTEmedium.jpg" data-media="(min-width: 40em)"></div>
+        <div data-src="images/COTE.jpg" data-media="(min-width: 64em)"></div>
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+           <img src="images/COTEsmall.jpg" alt="korean food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!" />
+		</noscript>
+  </div>
+</figure>
+<figure id="china food"> 
+    <div data-picture data-alt="china food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!">
+        <div data-src="images/chinasmall.jpg"></div>
+        <div data-src="images/chinamedium.jpg" data-media="(min-width: 40em)"></div>
+        <div data-src="images/Chinalarge.jpg" data-media="(min-width: 64em)"></div>
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+           <img src="images/chinasmall.jpg" alt="china food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!" />
+		</noscript> <h1 class="chinaletter">Chinese </h1><p>Chinese food is super diverse and flavorful! It varies a lot depending on the region—like Sichuan food with its spicy, bold flavors, or Cantonese food that's lighter and more delicate, featuring things like dim sum and sweet-and-sour dishes. You can’t forget the classic takeout favorites like General Tso’s chicken, orange chicken, or lo mein.</p>
+		   </div>
+</figure>      <h1 class="japonletter">Japanese</h1>
+	<figure id="japon food"> 
+    <div data-picture data-alt="japon food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!">
+        <div data-src="images/japonsmall.jpg"></div>
+        <div data-src="images/japonmedium.jpg" data-media="(min-width: 40em)"></div>
+        <div data-src="images/japonlarge.jpg" data-media="(min-width: 64em)"></div>
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+           <img src="images/japonsmall.jpg" alt="japon food food, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!" />
+		</noscript> <p>Japanese food is amazing—so fresh, simple, and delicious. It’s all about highlighting the natural flavors of ingredients. Sushi and sashimi are obviously the most iconic, but there’s so much more! You’ve got tempura (crispy battered seafood and veggies), ramen (with rich broths), and donburi (rice bowls topped with things like beef, chicken, or tempura). Oh, and don’t forget about the famous Japanese street food—takoyaki (octopus balls) and okonomiyaki (savory pancakes)!</p>
+       
+		   </div> 
+		<footer><p>2025, Kayi Zhang. This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+</figure>
+
+</body>
+</html>

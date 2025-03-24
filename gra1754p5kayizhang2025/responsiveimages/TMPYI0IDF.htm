@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Responsive Images</title>
+<style>
+body {
+	background-color:#FFF;
+	margin:0;
+	padding:0;
+	width:100%;
+}
+header {
+	background:url(images/skin_bkg_small.jpg) no-repeat top center;
+	height:15em;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+}
+#sheldon {
+	padding:1em;
+}
+@media screen and (min-width:40em){
+	header{
+		background:url(images/skin_bkg_large.jpg) no-repeat top center;
+		height:22em;
+	}
+}
+@media screen and (min-width:64em){
+	header{
+		height:28em;
+		background-size:100%;
+	}
+}
+
+/*
+==================================================
+Add media queries for tablet and desktop viewports
+==================================================
+
+*/
+</style>
+<!--
+===================================================
+Add the Picturefill and Matchmedia JS files to load
+conditional images and add support for <IE8
+===================================================
+-->
+<script src="js/picturefill.js"></script>
+<script src="js/matchmedia.js"></script>
+</head>
+
+<body>
+<header>
+<!--
+==============================================================
+Surround the IMG tag below with the FIGURE tag,
+DIV DATA-PICTURE and the NOSCRIPT tag as a fallback.
+Precede it with the three DIV DATA-SRC tags,
+including MEDIA QUERIES for tablet and desktop viewport sizes. 
+==============================================================
+-->
+<figure id="sheldon"> 
+    <div data-picture data-alt="Sheldon Cooper">
+        <div data-src="images/sheldon_small.jpg"></div>
+        <div data-src="images/sheldon_medium.jpg" data-media="(min-width: 40em)"></div>
+        <div data-src="images/sheldon_large.jpg" data-media="(min-width: 64em)"></div>
+        <!-- Fallback content for non-JS browsers. Same img src as the initial, unqualified source element. -->
+        <noscript>
+            <img src="images/sheldon_small.jpg" id="sheldon" alt="Sheldon Cooper, B.S., M.S., M.A., Ph.D.,  and Sc.D., OMG!" />
+        </noscript>
+    </div>
+</figure>
+</header>
+</body>
+</html>
