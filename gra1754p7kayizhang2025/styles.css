@@ -1,0 +1,170 @@
+@charset "UTF-8";
+body {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #5B0060;
+    background-image: url(2062463-3840x2160-desktop-4k-the-lego-movie-2-the-second-part-wallpaper-image.jpg);
+}
+wrapper {
+    width: 100%;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+header {
+    height: 143px;
+    background-image: url(images.png);
+    background-repeat: no-repeat;
+    text-align: center;
+    background-color: #FFFFFF;
+    background-position: center center;
+    background-size: contain;
+}
+ul li {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 10px;
+    padding: 5px;
+    display: inline-block;
+    background-color: rgba(255,0,4,1.00);
+    text-align: center;
+}
+main {
+    text-align: left;
+}
+h1, h2, p {
+    margin: 10px;
+    color: rgba(255,255,255,1.00);
+    padding: 5px;
+    text-align: center;
+}
+h3, h4    ,h5,h6{
+    color: #000000;
+    text-align: center;
+    font-size: 34px;
+    font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+    text-shadow: 0px 0px;
+    text-decoration: none;
+    -webkit-box-shadow: 4px 0px rgba(0,0,0,1.00);
+    box-shadow: 4px 0px rgba(0,0,0,1.00);
+}
+.checkmark {
+    height: 54px;
+}
+.submit {
+    width: 30%;
+    text-align: center;
+    display: inline-block;
+}
+section {
+    width: 100%;
+    display: inline-block;
+    vertical-align: top;
+}
+.tnc {
+    /* [disabled]display: inline-block; */
+    width: 29%;
+    padding-left: 0px;
+}
+.medium {
+    padding-top: 0px;
+    margin-bottom: -126px;
+}
+label {
+    font-size: 30px;
+    font-family: sans-seriff;
+    color: #FFFFFF;
+}
+input, select {
+    border-radius: 8px;
+    padding: 12px;
+    border: thin solid black;
+    width: 100%;
+    margin: 8px;
+}
+.firstname2 {
+    width: 100%;
+    margin-right: -4px;
+}
+.gender {
+    width: 100%;
+}
+.tabcreate {
+    width: 61%;
+    background-color: #FFFFFF;
+    color: #000000;
+}
+.footer {
+    background-color: #4B0065;
+    color: #FFFFFF;
+    font-size: 12px;
+    text-align: center;
+}
+img   {
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+}
+
+@media (min-width:62.5em){
+wrapper {
+    width: 100%;
+    background-position: center center;
+    background-size: cover;
+    background-image: url(M117lego-batman-EX.png);
+}
+}
+
+@media (min-width:75em){
+label {
+    width: 25%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+    text-align: right;
+}
+input, select {
+    width: 72%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+}
+.firstname2 {
+    width: 25%;
+}
+}
+
+@media (min-width:125em){
+section {
+}
+label {
+    width: 100%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+}
+input, select {
+    width: 90%;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+}
+.firstname {
+    width: 89%;
+    display: inline-block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin-right: -4px;
+}
+}
